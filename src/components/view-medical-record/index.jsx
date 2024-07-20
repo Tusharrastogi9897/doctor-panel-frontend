@@ -34,9 +34,10 @@ export const ViewMedicalRecord = ({ patient, isMobile, openDialog, setOpenDialog
                 toast.error(err?.response?.data?.detail)
             })
         }
+        // eslint-disable-next-line
     }, [patient, String(openDialog)])
   
-    
+
     return (
       <React.Fragment>
         <Dialog open={openDialog} onClose={handleClose} maxWidth="md">

@@ -5,7 +5,7 @@ import axios from "axios";
 // that then the request will be aborted.
 const PRODUCTION_BASE_URL =
   "https://dp-assessment-q2cqtlcudq-el.a.run.app/api/v1/";
-const DEVELOPMENT_BASE_URL = "http://localhost:8000/api/v1/";
+// const DEVELOPMENT_BASE_URL = "http://localhost:8000/api/v1/";
 
 const customAxios = axios.create({
   baseURL: PRODUCTION_BASE_URL
