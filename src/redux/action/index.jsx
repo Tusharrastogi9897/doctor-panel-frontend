@@ -9,7 +9,7 @@ export const getPatients = () => {
     return (dispatch) => {
         customAxios.get('patient/list').then(res => {
 
-            dispatch({type: UPDATE_PATIENTS, payload: res?.data?.data});
+            dispatch({type: UPDATE_PATIENTS, payload: res?.data?.data?.reverse()});
             dispatch({type: UPDATE_LOADER, payload: false});
             
         }).catch(err => {

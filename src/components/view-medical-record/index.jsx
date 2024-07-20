@@ -25,7 +25,7 @@ export const ViewMedicalRecord = ({ patient, isMobile, openDialog, setOpenDialog
     const [medicalRecords, setMedicalRecords] = useState([])
     
     useEffect(() => {
-        if(patient){
+        if(patient && openDialog){
             setLoader(true);
             customAxios.get(`patient/fetch-documents/${patient.id}`).then(res => {
                 setMedicalRecords(res?.data?.data);
@@ -34,8 +34,9 @@ export const ViewMedicalRecord = ({ patient, isMobile, openDialog, setOpenDialog
                 toast.error(err?.response?.data?.detail)
             })
         }
-    }, [patient])
+    }, [patient, String(openDialog)])
   
+    
     return (
       <React.Fragment>
         <Dialog open={openDialog} onClose={handleClose} maxWidth="md">
