@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/doctor-panel-frontend/static/css/main.3572f698.css",
-    "main.js": "/doctor-panel-frontend/static/js/main.83b900b8.js",
+    "main.js": "/doctor-panel-frontend/static/js/main.3c7a821b.js",
     "static/js/453.c207e905.chunk.js": "/doctor-panel-frontend/static/js/453.c207e905.chunk.js",
     "static/media/dp-vector.png": "/doctor-panel-frontend/static/media/dp-vector.aad0d08d24b7c5b25cbf.png",
     "static/media/steps-ai-logo.png": "/doctor-panel-frontend/static/media/steps-ai-logo.f5956141d5e88777172b.png",
     "index.html": "/doctor-panel-frontend/index.html",
     "main.3572f698.css.map": "/doctor-panel-frontend/static/css/main.3572f698.css.map",
-    "main.83b900b8.js.map": "/doctor-panel-frontend/static/js/main.83b900b8.js.map",
+    "main.3c7a821b.js.map": "/doctor-panel-frontend/static/js/main.3c7a821b.js.map",
     "453.c207e905.chunk.js.map": "/doctor-panel-frontend/static/js/453.c207e905.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3572f698.css",
-    "static/js/main.83b900b8.js"
+    "static/js/main.3c7a821b.js"
   ]
 }
