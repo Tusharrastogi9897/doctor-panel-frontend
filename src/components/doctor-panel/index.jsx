@@ -154,8 +154,9 @@ const AllPatientComponent = ({isMobile}) => {
 
     const [anchorEl, setAnchorEl] = React.useState(null);
 
-    const handleClick = (event) => {
+    const handleClick = (event, pat) => {
         setAnchorEl(event.currentTarget);
+        setPatient(pat)
     };
 
     const handleClose = () => {
@@ -324,7 +325,7 @@ const AllPatientComponent = ({isMobile}) => {
                                         </Typography>
                                     </TableCell>
                                     <TableCell>
-                                        <IconButton color="primary" onClick={handleClick}>
+                                        <IconButton color="primary" onClick={(e) => handleClick(e, row)}>
                                             <MoreVertRounded />
                                         </IconButton>
                                         <Popover 
@@ -344,13 +345,11 @@ const AllPatientComponent = ({isMobile}) => {
                                                 }}
                                             >
                                             <Button color="primary" style={{marginRight: "10px"}} startIcon={<Visibility />} onClick={() => {
-                                                setPatient(row);
                                                 setViewDialog(true);
                                             }}>
                                                 View Medical Records
                                             </Button>
                                             <Button color="primary" startIcon={<UploadFile />} onClick={() => {
-                                                setPatient(row);
                                                 documentsRef.current.click();
                                             }}>
                                                 Upload Medical Records

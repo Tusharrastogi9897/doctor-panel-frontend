@@ -25,6 +25,7 @@ export const ViewMedicalRecord = ({ patient, isMobile, openDialog, setOpenDialog
     const [medicalRecords, setMedicalRecords] = useState([])
     
     useEffect(() => {
+      console.log(patient, '9897cec')
         if(patient && openDialog){
             setLoader(true);
             customAxios.get(`patient/fetch-documents/${patient.id}`).then(res => {
